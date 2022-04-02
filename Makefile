@@ -8,20 +8,20 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=asterisk-chan-quectel
-PKG_VERSION:=1.2-20210918
+PKG_VERSION:=2.1-20211201
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/etnperlong/asterisk-chan-quectel.git
-PKG_SOURCE_VERSION:=ddcc56cb7d1115edf5d735a9a9b8fd42e6229303
+PKG_SOURCE_URL:=https://github.com/IchthysMaranatha/asterisk-chan-quectel.git
+PKG_SOURCE_VERSION:=skip
 PKG_SOURCE_DATE=2021-09-18
-PKG_MIRROR_HASH:=ee0734e9bcf0ec7ae1b4ccb6ee08ecb0924231869c2ff6e306afb4a74343fcdf
+PKG_MIRROR_HASH:=skip
 
 PKG_FIXUP:=autoreconf
 
 PKG_LICENSE:=GPL-2.0
 PKG_LICENSE_FILES:=COPYRIGHT.txt LICENSE.txt
-PKG_MAINTAINER:=spacedream <spacedream@tutamail.com>
+PKG_MAINTAINER:=Jiri Slachta <jiri@slachta.eu>
 
 MODULES_DIR:=/usr/lib/asterisk/modules
 
@@ -33,8 +33,8 @@ define Package/asterisk-chan-quectel
   SUBMENU:=Telephony
   SECTION:=net
   CATEGORY:=Network
-  URL:=https://github.com/t4rd15/asterisk-chan-quectel
-  DEPENDS:=asterisk $(ICONV_DEPENDS) +libsqlite3
+  URL:=https://github.com/IchthysMaranatha/asterisk-chan-quectel
+  DEPENDS:=asterisk $(ICONV_DEPENDS) +libsqlite3 +kmod-usb-acm +kmod-usb-serial +kmod-usb-serial-option +libusb-1.0 +usb-modeswitch +alsa-lib
   TITLE:=Quectel EC25 modem support
 endef
 
