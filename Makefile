@@ -8,13 +8,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=asterisk-chan-quectel
-PKG_VERSION:=2.1-20211201
+PKG_VERSION:=2.1-20220319
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/IchthysMaranatha/asterisk-chan-quectel.git
 PKG_SOURCE_VERSION:=a04af13098cf320c0501e1cb62c2d35665e2a275
-PKG_SOURCE_DATE=2021-09-18
+PKG_SOURCE_DATE=2022-03-19
 PKG_MIRROR_HASH:=d628f276de0ff018506ecc5f586edf92e6520e84432bd2a07732f2bdc8711ea6
 
 PKG_FIXUP:=autoreconf
@@ -34,7 +34,7 @@ define Package/asterisk-chan-quectel
   SECTION:=net
   CATEGORY:=Network
   URL:=https://github.com/IchthysMaranatha/asterisk-chan-quectel
-  DEPENDS:=asterisk $(ICONV_DEPENDS) +libsqlite3 +kmod-usb-acm +kmod-usb-serial +kmod-usb-serial-option +libusb-1.0 +usb-modeswitch +alsa-lib
+  DEPENDS:=asterisk $(ICONV_DEPENDS) +kmod-usb-acm +kmod-usb-serial +kmod-usb-serial-option +libusb-1.0 +usb-modeswitch +alsa-lib
   TITLE:=Quectel EC25 modem support
 endef
 
