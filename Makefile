@@ -8,14 +8,14 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=asterisk-chan-quectel
-PKG_VERSION:=2.1-20220319
+PKG_VERSION:=2.1-20220404
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/IchthysMaranatha/asterisk-chan-quectel.git
-PKG_SOURCE_VERSION:=a04af13098cf320c0501e1cb62c2d35665e2a275
-PKG_SOURCE_DATE=2022-03-19
-PKG_MIRROR_HASH:=d628f276de0ff018506ecc5f586edf92e6520e84432bd2a07732f2bdc8711ea6
+PKG_SOURCE_URL:=https://github.com/etnperlong/asterisk-chan-quectel.git
+PKG_SOURCE_VERSION:=7af88216053b57858ca864916f57e60bcfec317f
+PKG_SOURCE_DATE=2022-04-04
+PKG_MIRROR_HASH:=skip
 
 PKG_FIXUP:=autoreconf
 
