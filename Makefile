@@ -34,7 +34,7 @@ define Package/asterisk-chan-quectel
   SECTION:=net
   CATEGORY:=Utilities
   URL:=https://github.com/IchthysMaranatha/asterisk-chan-quectel
-  DEPENDS:=asterisk $(ICONV_DEPENDS) +kmod-usb-acm +kmod-usb-serial +kmod-usb-serial-option +libusb-1.0 +usb-modeswitch +alsa-lib
+  DEPENDS:=asterisk +libiconv-full +kmod-usb-acm +kmod-usb-serial +kmod-usb-serial-option +libusb-1.0 +usb-modeswitch +alsa-lib
   TITLE:=Quectel EC25 modem support
 endef
 
